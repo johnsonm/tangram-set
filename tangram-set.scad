@@ -2,10 +2,15 @@
 // Use allowed under Attribution 4.0 International (CC BY 4.0) license terms
 // https://creativecommons.org/licenses/by/4.0/legalcode
 
-f = 1.0; // X/Y scale factor relative to 100x100 assembled set
-r = 2; // corner radius
-h = 5; // height of tiles (not scaled by f)
-s = 2; // separate the tiles by approximately s for printing
+// X/Y scale factor relative to 100x100 assembled set
+f = 1.0;
+// corner radius in % of full set
+r = 2; // [0.1:5]
+// height of tiles in mm (not scaled by f)
+h = 5;
+// separate the tiles by approximately s for printing
+s = 2;
+// preview[view:south, tilt:top]
 
 module tile(points, r=r, h=h) {
     hull() for (point=points) translate([point[0], point[1]])
