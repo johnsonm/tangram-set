@@ -5,7 +5,7 @@
 // X/Y scale factor relative to 100x100 assembled set
 f = 1.0;
 // corner radius in % of full set
-r = 2; // [0.1:5]
+r = 1; // [0.01:2]
 // height of tiles in mm (not scaled by f)
 h = 5;
 // separate the tiles by approximately s for printing
